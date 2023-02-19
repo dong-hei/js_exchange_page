@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://kr.img.news.koreanair.com/wp-content/uploads/2019/05/SN201810_travel_1.png.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+.dropdown{
+    border: 1px solid rgb(255, 255, 255);
+    width: 400px;
+}
+
+.dropdown-menu{
+    width: 100%;
+}
+.flag-img {
+    width: 5%;
+  }

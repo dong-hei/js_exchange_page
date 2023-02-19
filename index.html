@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" id="from-btn" style="width:100%" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          환전
+        </a>
+        <ul class="dropdown-menu" id="from-currency-list">
+          <li id="KRW"><a class="dropdown-item" href="#">
+            <img class="flag-img" src="https://cdn.countryflags.com/thumbs/south-korea/flag-square-250.png"/>KRW</a></li>
+          <li id="USD"><a class="dropdown-item">
+             <img class="flag-img" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-square-250.png" href="#">USD</a></li>
+          <li id="JPY"><a class="dropdown-item" href="#">
+            <img class="flag-img" src="https://cdn.countryflags.com/thumbs/japan/flag-square-250.png"/>JPY</a></li>
+          <li id="CNY"><a class="dropdown-item" href="#">
+            <img class="flag-img" src="https://cdn.countryflags.com/thumbs/china/flag-square-250.png"/>CNY</a></li>
+          <li id="EUR"><a class="dropdown-item" href="#">
+            <img class="flag-img" src="https://cdn.countryflags.com/thumbs/europe/flag-square-250.png"/>EUR</a></li>
+        </ul>
+        <div>
+            <input id="from-input" onkeyup="convert()" style="width:100%;"/>
+            <div id="fromNumToKorea" style="color:azure">달러</div>
+        </div>
+      </div>
+      <h1>=</h1>
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" id="to-btn" style="width:100%" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          환전
+        </a>
+        <ul class="dropdown-menu" id="to-currency-list">
+            <li id="KRW"><a class="dropdown-item" href="#">
+              <img class="flag-img" src="https://cdn.countryflags.com/thumbs/south-korea/flag-square-250.png"/>KRW</a></li>
+            <li id="USD"><a class="dropdown-item">
+               <img class="flag-img" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-square-250.png" href="#">USD</a></li>
+            <li id="JPY"><a class="dropdown-item" href="#">
+              <img class="flag-img" src="https://cdn.countryflags.com/thumbs/japan/flag-square-250.png"/>JPY</a></li>
+            <li id="CNY"><a class="dropdown-item" href="#">
+              <img class="flag-img" src="https://cdn.countryflags.com/thumbs/china/flag-square-250.png"/>CNY</a></li>
+            <li id="EUR"><a class="dropdown-item" href="#">
+              <img class="flag-img" src="https://cdn.countryflags.com/thumbs/europe/flag-square-250.png"/>EUR</a></li>
+          </ul>
+        <div>
+            <input id="to-input"  onkeyup="convert()"  style="width:100%;"/>
+            <!-- 키를 누르는순간 발생하는 onkeyup 이벤트 -->
+            <div id="toNumToKorea" style="color:azure">원</div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
